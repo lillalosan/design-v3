@@ -23,4 +23,6 @@ det är väl lätt att tro att om något ska ha hög nivå av användarvänlighe
 så försvinner en del av den kreativa sidan. Ett den kreativa sidan
 skulle begränsas i mötet med användarvänlighet.
 
-Min TIL för detta kmom är att ha kommit igång med att pusha till GitHub.
+Min TIL för detta kmom är att ha kommit igång med att jobba mot GitHub.
+Dock tog det något försök att förstå ordningen med kommandon och hur mycket
+och hur ofta de behövde hanteras för att ändringar skulle komma till GitHub.
