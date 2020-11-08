@@ -128,15 +128,15 @@ body {
 }
 
 .nav a, .nav-toggle {
-    color: #333;
+    color: #222;
 }
 
 .nav .active a, .nav a:hover, .nav-toggle:hover {
-    color: #3b440d;
+    color: #222;
 }
 
 .nav a:hover, .nav-toggle:hover {
-    color: #3b440d;
+    color: #222;
     text-decoration: underline;
 }
 
@@ -157,7 +157,6 @@ body {
 }
 
 /*** BASIC LAYOUT: FOOTER ***/
-
 .footer {
     background: #707070;
     color: #c0c0c0;

@@ -1,5 +1,5 @@
 ---
-Logo: image/mini_home.png
+Logo: image/coding.png
 Tagline: Min portfolio.
 Social:
     - title: Länk till dbwebbs github repo.
