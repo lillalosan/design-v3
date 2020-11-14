@@ -1,0 +1,27 @@
+{
+    # Ärv regler från andra filer:
+    "extends": [
+        "stylelint-config-sass-guidelines"
+    ],
+    # Skriv över ev. regler från ärvda filer och/eller lägg till egna:
+    "rules": {
+        "indentation": [
+            4,
+            {
+                "except": [
+                    "value"
+                ]
+            }
+        ],
+        "at-rule-no-unknown": null,
+        "order/properties-alphabetical-order": null,
+        "selector-max-compound-selectors": 5
+    },
+    # Lägg till mappar och filer som inte ska valideras:
+    "ignoreFiles": [
+        "**/node_modules/",
+        "shared/fontawesome/**/*.scss",
+        "**/*.css",
+        "**/*.min.css"
+    ]
+}
