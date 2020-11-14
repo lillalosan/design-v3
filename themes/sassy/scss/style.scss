@@ -12,9 +12,19 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/regular';
 @import '../../shared/fontawesome/scss/solid';
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shadows+Into+Light+Two&display=swap');
+
 // Egna för specifika temat:
 // (egna skriver över i externa om de definieras i denna ordning [egna EFTER externa])
 @import 'old';
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Shadows Into Light Two', cursive;
+}
 
 /*
 * {

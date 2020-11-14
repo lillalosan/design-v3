@@ -7,7 +7,7 @@ Redovisningssida för design
 ==================
 
 * [kmom01](report/kmom01)
-* kmom02
+* [kmom02](report/kmom02)
 * kmom03
 * kmom04
 * kmom05

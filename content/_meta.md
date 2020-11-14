@@ -4,8 +4,8 @@ Tagline: Min portfolio.
 Social:
     - title: Länk till dbwebbs github repo.
       url: https://github.com/dbwebb-se/design-v3
-      icon: github
+      icon: fab fa-github
     - title: Länk till mitt github-repo.
       url: https://github.com/lillalosan/design-v3
-      icon: paw
+      icon: fab fa-github-alt
 ---
