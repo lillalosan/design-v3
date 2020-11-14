@@ -1,9 +1,20 @@
 $base-color: #c6538c; // mauve pink
 
-@import '../../shared/scss/base';
-@import 'old';
-
+// Externa:
 //@import '../../node_modules/normalize.css/normalize';
+@import '../../shared/scss/base';
+//fontawesome behöver komma först:
+@import '../../shared/fontawesome/scss/fontawesome';
+// Sätt sökväg som egen variabel ty default sökväg ej stämmer i detta fall:
+$fa-font-path: '../../shared/fontawesome/webfonts';
+// Laddar in 3 olika typer a ikoner:
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/regular';
+@import '../../shared/fontawesome/scss/solid';
+
+// Egna för specifika temat:
+// (egna skriver över i externa om de definieras i denna ordning [egna EFTER externa])
+@import 'old';
 
 /*
 * {
