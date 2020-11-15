@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
     "watch": "sass sassy/scss/style.scss sassy/css/style.css --no-source-map --watch",
+    "watch-min": "sass sassy/scss/style.scss sassy/css/style.min.css --no-source-map --style compressed --watch",
     "style": "sass sassy/scss/style.scss sassy/css/style.css --no-source-map",
     "style-min": "sass sassy/scss/style.scss sassy/css/style.min.css --no-source-map --style compressed"
   },

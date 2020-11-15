@@ -1,7 +1,7 @@
 $base-color: #c6538c; // mauve pink
 
 // Externa:
-//@import '../../node_modules/normalize.css/normalize';
+//Genom base hämtas 'normalize.css', shared/layout och shared/variables också in;
 @import '../../shared/scss/base';
 //fontawesome behöver komma först:
 @import '../../shared/fontawesome/scss/fontawesome';
@@ -13,7 +13,6 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shadows+Into+Light+Two&display=swap');
-
 // Egna för specifika temat:
 // (egna skriver över i externa om de definieras i denna ordning [egna EFTER externa])
 @import 'old';
@@ -22,7 +21,12 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Shadows Into Light Two', cursive;
 }
 
