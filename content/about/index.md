@@ -3,20 +3,19 @@ Title: About
 Description: Om de tekniker sidan använder
 ---
 
-Sidans tekniker
+About - Sidans tekniker
 ==================
 Denna sida beskriver kortfattat de tekniker sidan använder.
 
 ### Font Awesome
-Lite text.
+Med hjälp av Font Awesome laddas fonter i form av ikoner in.
 
 ### SASS
-Lite text.
+SASS är en preprocessor som ger fler möjligheter än bara CSS.
+Exempelvis kan variabler användas och koden kan effektiviseras med extend/inheritance.
 
 ### Google Fonts
-Lite text.
+Genom Google Fonts tillåts sidan använda andra typsnitt än respektive besökare har installerat på sin enhet.
 
 ### Normalize.css
-Denna teknik används för att bland annat bevara användbara standarder från webbläsare, öka användarvänligheten och laga vanliga inkonsekvenser i webbläsare.
-
-Källa: [about-normalize-css](http://nicolasgallagher.com/about-normalize-css/)
+Genom att utgå ifrån Normalize.css säkerställs sidans utseende, så att det inte varierar med olika webbläsare.

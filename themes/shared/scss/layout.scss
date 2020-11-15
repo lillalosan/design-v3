@@ -1,4 +1,16 @@
-html, body {
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+html,
+body {
     height: 100%;
 }
 
@@ -13,7 +25,8 @@ body {
     padding: 5em 0 4em;
 }
 
-.header, .footer {
+.header,
+.footer {
     flex: 0 0 auto;
 }
 
@@ -39,7 +52,8 @@ body {
     background: #fff;
 }
 
-.title, .logo {
+.title,
+.logo {
     float: left;
     padding: 3em 3em 3em 0;
 }
@@ -92,6 +106,41 @@ body {
     font-weight: bold;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0 none;
+}
+
+.slide {
+    overflow-y: hidden !important;
+    transition: height 0.5s ease-in !important;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* IE8 + IE9 clearfix */
+.header>.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.flash-img {
+    height: 100%;
+}
+
 .auto {
     margin: auto;
     text-align: center;
@@ -102,4 +151,5 @@ body {
     border: 1px solid $border-dark;
     height: $alert-box-size/2;
     width: $alert-box-size;
+    max-width: 80%;
 }

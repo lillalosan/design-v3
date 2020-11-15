@@ -1,4 +1,6 @@
 $base-color: #c6538c; // mauve pink
+$base-font-color: #222;
+$header-bg: #9b9dac;
 
 // Externa:
 //Genom base hämtas 'normalize.css', shared/layout och shared/variables också in;
@@ -13,7 +15,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shadows+Into+Light+Two&display=swap');
-// Egna för specifika temat:
+// Egna för specifikaa temat:
 // (egna skriver över i externa om de definieras i denna ordning [egna EFTER externa])
 @import 'old';
 
@@ -30,7 +32,28 @@ h6 {
     font-family: 'Shadows Into Light Two', cursive;
 }
 
-/*
-* {
-    background-color: yellow;
-} */
+.header {
+    background: $header-bg;
+}
+
+/* Testar extend */
+%text-color-shared {
+    color: $base-font-color;
+}
+
+.nav a,
+.nav-toggle {
+    @extend %text-color-shared;
+}
+
+.nav .active a,
+.nav a:hover,
+.nav-toggle:hover {
+    @extend %text-color-shared;
+}
+
+.nav a:hover,
+.nav-toggle:hover {
+    @extend %text-color-shared;
+    text-decoration: underline;
+}
