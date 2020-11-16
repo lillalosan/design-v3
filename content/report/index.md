@@ -1,6 +1,7 @@
 ---
 Title: Report
 Description: Kursens redovisningssida
+Template: report
 ---
 
 Redovisningssida för design
