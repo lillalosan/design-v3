@@ -1,17 +1,14 @@
 ---
 Title: Kmom03
-Description: SASS och typografi
+Description: Layout
 Template: kmom
 ---
 
-Kursmoment 2
+Kursmoment 3
 ==================
-SASS känns ovant, kanske just för att jag är så van vid att bara använda vanlig CSS. Jag är heller inte bekant med Node, npm eller npm scripts sedan tidigare. Det känns som att det är bra verktyg att lära sig, men det var en brant uppförsbacke att försöka hänga med i vad man faktiskt gör med de olika kommandona och hur allt hänger ihop.
+Jag har jobbat lite med CSS-grid tidigare i htmlphp-kursen. Då valde jag att använda mig utav det i projektuppgiften eftersom jag kände att det var något jag ville lära mig. Jag överraskades av vilka möjligheter det finns med det. Jag lyckades med uppgifterna i detta kmom relativt smärtfritt, men tycker fortfarande att det kan vara svårt att få det att gå ihop snyggt. Framför allt när man har subgrids och liknande. När jag har sökt mer information på nätet har jag dessutom märkt att det finns väldigt mycket mer inom CSS-Grid/Flexbox, så det finns massor att fortsätta lära! Det känns som att det gäller att planera uppdelningarna, så att man inte snurrar in sig på antal rader och kolumner när man fått ihop mycket innehåll.
 
-Jag fann det svårt att försöka påbörja detta kmom på förhand, eftersom det för mig inte var tillräckligt tydligt med de skriftliga genomgångarna. Var det något stycke man inte fick att fungera, så visste man inte riktigt hur man skulle komma runt det. När däremot inspelningarna kom gick det otroligt mycket enklare och då förstod jag det bättre!
+Jag valde att behålla sidans övergripande layout och fokuserade på att skapa utseendet för report och kmom enligt uppgifterna. Med sidebaren på kmom-sidorna valde jag först att ha med den i slutet av respektive kmom för att man enkelt ska kunna byta till annat kmom. Sedan tolkade jag det i uppgift som att denna helt skulle döljas, vilket jag då gjorde med "visibility: hidden". Jag fick inspiration från Niklas genomgång och delade upp min SASS-kod i en del för report och en del för kmom. Jag känner fortfarande att det är något som känns konstigt med headern och just i skiftet då menyn togglas, men det har jag inte ändrat något i denna vecka.
+Då jag ser att kommande två kmom är just färg och bild väntar jag mig att göra ändringar med sidans layout då.
 
-Jag valde att skapa ett nytt tema för detta kmom, men har följt strukturen från temat jag gjorde i kmom01. Jag har även påbörjat en uppdelning av koden till scss under shared/, men känner mig ändå lite avvaktande med detta.
-
-Kompileringen från SASS till CSS kändes lite bökigt från början, men genom att sätta igång den automatiska komplieringen med 'sass --watch', kändes det smidigare. Dock bör sägas att jag fastnade lite när jag arbetade med scss-filerna under shared och hade igång automatisk kompilering. Tog jag bort saker från 'old.css' som jag lagt över i 'shared/layout' så dök inte ändringarna inte upp. En första tanke var då att 'sass --watch' kanske bara kompilerar just 'css/style' och inte de scss-filer som är importerade. När jag körde 'npm run style-min' på min teams-folder, så fungerade ändringarna. Kontentan är att det gäller att ha koll på läget för att inte fastna på grund av enkla misstag.
-
-Min TIL för detta kmom är framför allt en begynnande förståelse för SASS och även att commit och push nu äntligen börjar att sätta sig :)
+Min TIL för detta kmom är lite i stil med visdomsordet "Ju mer man lär sig, desto fortare inser man hur lite man egentligen kan". Jag ser dock fram emot att lära mig mer! Jag känner att jag har en bättre grund att stå på gällande att använda mig av CSS-grids. Flex har jag inte lika bra koll på.

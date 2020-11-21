@@ -1,6 +1,6 @@
 ---
 Title: Kmom01
-Description: Del 1
+Description: Ramverk, innehåll, style
 Template: kmom
 ---
 

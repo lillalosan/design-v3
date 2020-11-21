@@ -1,5 +1,7 @@
 .landning {
     display: grid;
+    max-width: 48em;
+    margin: 0 auto;
     gap: 1em 2em;
     padding: 0 1em;
 }
@@ -15,8 +17,12 @@
     display: block;
     flex-direction: column;
     align-items: center;
-    padding: 0em;
+    padding: 0;
     text-align: center;
+}
+
+.kmom-box.projekt {
+    grid-column: span 3;
 }
 
 .kmom-box h2 {
@@ -30,71 +36,8 @@
 
 .social.bottom {
     float: right;
-    padding: 0 0.5em 0.2em 0em;
+    padding: 0 0.5em 0.2em 0;
     font-size: 2rem;
-}
-
-/*
-.kmom-box .bottom {
-    justify-content: flex-end;
-} */
-
-/*
-.inner-box {
-    display: subgrid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-gap: 0;
-}
-
-.kmom-box a {
-    text-decoration: underline;
-}
-
-.kmom-box .middle,
-.kmom-box .bottom {
-    background-color: #fff;
-}
-
-.kmom-box .top {
-    background-color: #aaa;
-} */
-
-/*
-.inner-box {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    row-gap: 0em;
-    grid-template-areas: 'top' 'middle' 'bottom';
-    padding: 0em;
-}
-
-.inner-box a {
-    text-decoration: underline;
-}
-
-.inner-box .middle {
-    background-color: red;
-}
-
-.inner-box .top,
-.inner-box .bottom {
-    background-color: pink;
-}
-
-.inner-box .bottom {
-    float: right;
-} */
-
-/* TEST
-.top { grid-area: top; }
-.middle { grid-area: middle; }
-.bottom { grid-area: bottom; }
- */
-
-.kmom-box.projekt {
-    grid-column: span 3;
 }
 
 /* Surfplattor i horisontellt läge

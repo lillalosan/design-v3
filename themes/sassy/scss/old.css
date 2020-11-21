@@ -26,7 +26,7 @@
 /*** BASIC LAYOUT: EXTRA SMALL DEVICES ***/
 @media (max-width: 767px) {
     .main {
-        padding: 2em 0 1em;
+        padding: 1em 0 1em;
     }
     .title, .logo {
         padding: 2em 1.5em 2em 0;
