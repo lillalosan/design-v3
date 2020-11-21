@@ -18,6 +18,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 // Egna för specifikaa temat:
 // (egna skriver över i externa om de definieras i denna ordning [egna EFTER externa])
 @import 'old';
+@import 'report';
 
 * {
     font-family: 'Raleway', sans-serif;

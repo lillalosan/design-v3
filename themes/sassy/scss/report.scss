@@ -1,0 +1,111 @@
+.landning {
+    display: grid;
+    gap: 1em 2em;
+    padding: 0 1em;
+}
+
+.landning h1 {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.kmom-box {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    grid-column: span 1;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding: 0em;
+    text-align: center;
+}
+
+.kmom-box h2 {
+    background-color: #bbb;
+    text-decoration: underline;
+}
+
+.kmom-box p {
+    padding: 0 1em;
+}
+
+.social.bottom {
+    float: right;
+    padding: 0 0.5em 0.2em 0em;
+    font-size: 2rem;
+}
+
+/*
+.kmom-box .bottom {
+    justify-content: flex-end;
+} */
+
+/*
+.inner-box {
+    display: subgrid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 0;
+}
+
+.kmom-box a {
+    text-decoration: underline;
+}
+
+.kmom-box .middle,
+.kmom-box .bottom {
+    background-color: #fff;
+}
+
+.kmom-box .top {
+    background-color: #aaa;
+} */
+
+/*
+.inner-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 0em;
+    grid-template-areas: 'top' 'middle' 'bottom';
+    padding: 0em;
+}
+
+.inner-box a {
+    text-decoration: underline;
+}
+
+.inner-box .middle {
+    background-color: red;
+}
+
+.inner-box .top,
+.inner-box .bottom {
+    background-color: pink;
+}
+
+.inner-box .bottom {
+    float: right;
+} */
+
+/* TEST
+.top { grid-area: top; }
+.middle { grid-area: middle; }
+.bottom { grid-area: bottom; }
+ */
+
+.kmom-box.projekt {
+    grid-column: span 3;
+}
+
+/* Surfplattor i horisontellt läge
+@media (max-width: 920px) {
+} */
+
+/* De flesta mobiltelefoner */
+@media (max-width: 767px) {
+    .landning h1,
+    .kmom-box,
+    .kmom-box.projekt {
+        grid-column: span 4;
+    }
+}
