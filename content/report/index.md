@@ -7,10 +7,37 @@ Template: report
 Redovisningssida för design
 ==================
 
-* [kmom01](report/kmom01)
-* [kmom02](report/kmom02)
-* kmom03
-* kmom04
-* kmom05
-* kmom06
-* kmom10
+<div class="kmom-box">
+    <a href="#"><h2>Kmom01</h2></a>
+    <p>Något om kursmomentet.</p>
+</div>
+
+<div class="kmom-box">
+    <a href="#"><h2>Kmom02</h2></a>
+    <p>Något om kursmomentet.</p>
+</div>
+
+<div class="kmom-box">
+    <a href="#"><h2>Kmom03</h2></a>
+    <p>Något om kursmomentet.</p>
+</div>
+
+<div class="kmom-box">
+    <a href="#"><h2>Kmom04</h2></a>
+    <p>Något om kursmomentet.</p>
+</div>
+
+<div class="kmom-box">
+    <a href="#"><h2>Kmom05</h2></a>
+    <p>Något om kursmomentet.</p>
+</div>
+
+<div class="kmom-box">
+    <a href="#"><h2>Kmom06</h2></a>
+    <p>Något om kursmomentet.</p>
+</div>
+
+<div class="kmom-box">
+    <a href="#"><h2>Kmom10</h2></a>
+    <p>Något om kursmomentet.</p>
+</div>
