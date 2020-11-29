@@ -147,6 +147,10 @@ img {
     width: 100%;
 }
 
+.image.xsmall {
+    width: 60%;
+}
+
 @media (max-width: 767px) {
     .image.xsmall {
         width: 60%;
