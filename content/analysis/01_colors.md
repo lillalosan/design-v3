@@ -20,6 +20,10 @@ För utförande av färganalys används verktyget [Adobe Color](https://color.ad
 
 Vid granskning av komplementfärger används [Canvas Color wheel](https://www.canva.com/colors/color-wheel/ "Canva Color wheel").
 
+###Typsnitt
+Vilka typsnitt som används i skriven text undersöks först med webbläsarens inbyggda inspekterare. I fall där detta ej är tillämpbart används extension som heter [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm/related?hl=en "WhatFont") i webbläsaren.
+Om text även används i bilder analyseras dessa genom att använda verktyget [WhatTheFont](https://www.myfonts.com/WhatTheFont/ "WhatTheFont").
+
 Resultat
 -----------------------
 
@@ -29,25 +33,25 @@ Nedan presenteras studiens resultat. Detta analyseras och diskuteras sedan i nä
 
 ###MoMA
 ####Snapshots på webbplats
-![Snapshop, MoMA](%assets_url%/img/analysis/view_moma.png "Snapshot startsida, MoMA")
-
+Till vänster presenteras webbplatsens utseende  på stor enhet och till höger presenteras utseendet på mindre enhet.
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
-<td>
-<img src="%assets_url%/img/analysis/viewPhone_moma.png" alt="Snapshot startsida för mobiltelefon, MoMA" style="height: 50%; width: 50%;">
-</tr>
-</table>
+<td style="width: 75%">
+<img src="%assets_url%/img/analysis/view_moma.png" alt="Snapshot startsida, MoMA">
+</td>
+<td style="width: 25%">
+<img src="%assets_url%/img/analysis/viewPhone_moma.png" alt="Snapshot startsida för mobiltelefon, MoMA">
+</td>
+</tr></table>
 
-
-
-####Använd färgpalett
+####Färgpalett
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
-<td style="height: 50px; width: 50px; background-color: #F25764">
-<td style="height: 50px; width: 50px; background-color: #753FBF">
-<td style="height: 50px; width: 50px; background-color: #02AE3E">
-<td style="height: 50px; width: 50px; background-color: #F2B705">
-<td style="height: 50px; width: 50px; background-color: #F2811D">
+<td style="height: 50px; width: 50px; background-color: #F25764"></td>
+<td style="height: 50px; width: 50px; background-color: #753FBF"></td>
+<td style="height: 50px; width: 50px; background-color: #02AE3E"></td>
+<td style="height: 50px; width: 50px; background-color: #F2B705"></td>
+<td style="height: 50px; width: 50px; background-color: #F2811D"></td>
 </tr>
 </table>
 
@@ -71,6 +75,8 @@ Som komplementfärger (rad 2) till färgpaletten (rad 1) fås följande resultat
 
 ####Typsnitt
 H1-H3 samt brödtext. Serif eller sans-serif?
+
+MoMA har utvecklat sitt eget typsnitt, som heter MoMA Sans. Precis som namnet antyder, är typsnittet utan serifer. Det är detta typsnitt som används genomgående på sidan, i såväl rubriker som löpande text, med bland annat olika weight, line height och size.
 
 ###Webbplats2
 ####Färgpalett

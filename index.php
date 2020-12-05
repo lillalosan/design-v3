@@ -29,11 +29,15 @@ $pico = new Pico(
     'themes/'   // themes dir
 );
 
+//$_SESSION["test"] = "testing session";
+//session_destroy();
+
 // override configuration?
 $pico->setConfig(array(
     'session' => $_SESSION
 ));
 
+// Om action är satt:
 if (isset($_GET["action"])) {
     if ($_GET["action"] == "theme") {
         $previousValue = isset($_SESSION["theme"]) ? $_SESSION["theme"] : null;
