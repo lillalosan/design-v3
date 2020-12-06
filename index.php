@@ -31,6 +31,22 @@ $pico = new Pico(
 
 // Om action är satt:
 if (isset($_GET["action"])) {
+    if ($_GET["action"] == "theme") {
+        $previousValue = isset($_SESSION["theme"]) ? $_SESSION["theme"] : null;
+
+        // Toggla mörka temat
+        // Om mörkt tema redan valt -> Gå tillbaka till vanliga temat
+        if ($previousValue == "dark") {
+            unset($_SESSION["theme"]);
+        } else { // Annars sätt tema till d
+            $_SESSION["theme"] = "dark";
+        }
+
+        $url = $_SERVER["REQUEST_SCHEME"] . "://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
+        $url = preg_replace("/index.php\//", "", $url);
+        header("Location: $url");
+    }
+
     if ($_GET["action"] == "session_destroy") {
         session_destroy();
 
@@ -44,45 +60,7 @@ if (isset($_GET["action"])) {
         $url = preg_replace("/index.php\//", "", $url);
         header("Location: $url");
     }
-
-/*    if ($_GET["action"] == "theme") {
-        $previousValue = isset($_SESSION["theme"]) ? $_SESSION["theme"] : null;
-
-        if ($previousValue == "dark") {
-            unset($_SESSION["theme"]);
-        } else {
-            $_SESSION["theme"] = "dark";
-        }
-
-        $url = $_SERVER["REQUEST_SCHEME"] . "://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
-        $url = preg_replace("/index.php\//", "", $url);
-        header("Location: $url");
-    }*/
 }
-
-// Om action är satt:
-/*if (isset($_GET["action"])) {
-    if ($_GET["action"] == "theme") {
-        $previousValue = isset($_SESSION["theme"]) ? $_SESSION["theme"] : null;
-
-        if ($previousValue == "dark") {
-            unset($_SESSION["theme"]);
-        } else {
-            $_SESSION["theme"] = "dark";
-        }
-
-        $url = $_SERVER["REQUEST_SCHEME"] . "://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
-        $url = preg_replace("/index.php\//", "", $url);
-        header("Location: $url");
-    }
-
-    if ($_GET["action"] == "session_destroy") {
-        session_destroy();
-        $url = $_SERVER["REQUEST_SCHEME"] . "://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
-        $url = preg_replace("/index.php\//", "", $url);
-        header("Location: $url");
-    }
-}*/
 
 //$_SESSION["test"] = "testing session";
 //session_destroy();
