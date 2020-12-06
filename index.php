@@ -29,16 +29,39 @@ $pico = new Pico(
     'themes/'   // themes dir
 );
 
-//$_SESSION["test"] = "testing session";
-//session_destroy();
-
-// override configuration?
-$pico->setConfig(array(
-    'session' => $_SESSION
-));
-
 // Om action är satt:
 if (isset($_GET["action"])) {
+    if ($_GET["action"] == "session_destroy") {
+        session_destroy();
+
+        $url = $_SERVER["REQUEST_SCHEME"] . "://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
+        /* Bygga ihop url för hemsidan, där:
+        REQUEST_SCHEME = Protokollet (http eller https)
+        HTTP_HOST = Basdomänen (localhost eller grundadress/domän såsom www.student.bth.se)
+        PHP_SELF = Sökvägen */
+
+        // Fixa lite magi med regex:
+        $url = preg_replace("/index.php\//", "", $url);
+        header("Location: $url");
+    }
+
+/*    if ($_GET["action"] == "theme") {
+        $previousValue = isset($_SESSION["theme"]) ? $_SESSION["theme"] : null;
+
+        if ($previousValue == "dark") {
+            unset($_SESSION["theme"]);
+        } else {
+            $_SESSION["theme"] = "dark";
+        }
+
+        $url = $_SERVER["REQUEST_SCHEME"] . "://" . $_SERVER["HTTP_HOST"] . $_SERVER["PHP_SELF"];
+        $url = preg_replace("/index.php\//", "", $url);
+        header("Location: $url");
+    }*/
+}
+
+// Om action är satt:
+/*if (isset($_GET["action"])) {
     if ($_GET["action"] == "theme") {
         $previousValue = isset($_SESSION["theme"]) ? $_SESSION["theme"] : null;
 
@@ -59,7 +82,15 @@ if (isset($_GET["action"])) {
         $url = preg_replace("/index.php\//", "", $url);
         header("Location: $url");
     }
-}
+}*/
+
+//$_SESSION["test"] = "testing session";
+//session_destroy();
+
+// override configuration?
+$pico->setConfig(array(
+    'session' => $_SESSION
+));
 
 // run application
 echo $pico->run();

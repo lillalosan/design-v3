@@ -8,4 +8,7 @@ Social:
     - title: Länk till mitt github-repo.
       url: https://github.com/lillalosan/design-v3
       icon: fab fa-github-alt
+    - title: Destroy session
+      url: ?action=session_destroy
+      icon: fas fa-trash
 ---
