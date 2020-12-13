@@ -8,8 +8,12 @@
     "lint": "stylelint \"**/*.scss\"",
     "watch": "sass sassy/scss/style.scss sassy/css/style.css --no-source-map --watch",
     "watch-min": "sass sassy/scss/style.scss sassy/css/style.min.css --no-source-map --style compressed --watch",
-    "style": "sass sassy/scss/style.scss sassy/css/style.css --no-source-map",
-    "style-min": "sass sassy/scss/style.scss sassy/css/style.min.css --no-source-map --style compressed"
+    "style-light": "sass sassy/scss/style.scss sassy/css/style.css --no-source-map",
+    "style-light-min": "sass sassy/scss/style.scss sassy/css/style.min.css --no-source-map --style compressed",
+    "style-dark": "sass sassy/scss/style-dark.scss sassy/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass sassy/scss/style-dark.scss sassy/css/style-dark.min.css --no-source-map --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min"
   },
   "keywords": [],
   "author": "",

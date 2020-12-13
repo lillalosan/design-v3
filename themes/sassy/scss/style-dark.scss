@@ -1,0 +1,123 @@
+$base-color: #c6538c; // mauve pink
+$base-font-color: #222;
+$header-bg: #9b9dac;
+
+// Variabler för mörkt tema:
+//$dark-base-color: #263238;
+//$dark-base-color: #121212;
+$dark-base-color1: #1f1f1f;
+$dark-base-color2: #333;
+//$dark-font-color1: #5C5C5C;
+$dark-font-color1: #c0c0c0;
+$dark-font-color2: #e0e0e0;
+$black: #000;
+$white: #fff;
+$dark-icons: #616161;
+$dark-kmom1: #444;
+
+// Externa:
+//Genom base hämtas 'normalize.css', shared/layout och shared/variables också in;
+@import '../../shared/scss/base';
+//fontawesome behöver komma först:
+@import '../../shared/fontawesome/scss/fontawesome';
+// Sätt sökväg som egen variabel ty default sökväg ej stämmer i detta fall:
+$fa-font-path: '../../shared/fontawesome/webfonts';
+// Laddar in 3 olika typer a ikoner:
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/regular';
+@import '../../shared/fontawesome/scss/solid';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shadows+Into+Light+Two&display=swap');
+// Egna för specifikaa temat:
+// (egna skriver över i externa om de definieras i denna ordning [egna EFTER externa])
+@import 'old';
+@import 'report';
+@import 'kmom';
+@import 'style';
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    color: $dark-font-color1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title *,
+.title p {
+    color: $dark-font-color1;
+}
+
+.header {
+    background: $dark-base-color1;
+}
+
+/* Testar extend */
+%text-color-shared {
+    color: $dark-font-color1;
+}
+
+.nav a,
+.nav-toggle {
+    @extend %text-color-shared;
+}
+
+.nav .active a,
+.nav a:hover,
+.nav-toggle:hover {
+    @extend %text-color-shared;
+}
+
+.nav a:hover,
+.nav-toggle:hover {
+    @extend %text-color-shared;
+    text-decoration: underline;
+}
+
+.main {
+    background-color: $dark-base-color2;
+}
+
+img,
+table {
+    filter: grayscale(90%);
+}
+
+.flash-img,
+.logo img {
+    filter: grayscale(100%);
+}
+
+.logo img {
+    filter: invert(100%);
+}
+
+/*** BASIC LAYOUT: FOOTER ***/
+.footer {
+    background-color: $dark-base-color1;
+    color: $dark-font-color1;
+}
+
+.footer a,
+a {
+    color: $dark-font-color1;
+}
+
+.footer a:hover,
+a:hover {
+    color: $white;
+}
+
+.kmom-box {
+    background-color: $dark-kmom1;
+}
+
+.kmom-box h2 {
+    background-color: $dark-base-color1;
+}

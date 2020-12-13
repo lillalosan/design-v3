@@ -5,7 +5,7 @@ Description: This is our index page.
 
 Startsida
 ==========================
-Hej,![Selfie på Louise](%assets_url%/img/me00.jpg)
+Hej,![Selfie på Louise](%assets_url%/img/me00-dark.png)
 
 Mitt namn är Louise. Jag bor i Skåne och jag är en arbetande civilingenjör med fäbless för allt teknik- och IT-relaterat. Jag är en tekniknörd och allätare. Jag gillar ord och text och språk (inklusive programmering). Sarkasm och brittisk humor ligger mig varmt om hjärtat. Jag gillar att hela tiden lära mig mer, med tankesättet:
 > Hur svårt kan det vara?
